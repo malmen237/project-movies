@@ -206,6 +206,13 @@ a:-webkit-any-link {
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 5%;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .back-btn:hover {
+    transition: 0.5s ease-in-out;
+    transform: translateX(0.5rem);
   }
 
   .page-content img {

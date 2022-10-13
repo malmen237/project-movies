@@ -44,8 +44,12 @@ const Details = () => {
         name={listItem.title}
         poster={listItem.poster_path}
         overview={listItem.overview}
-        average={listItem.vote_average} />
+        average={listItem.vote_average}
+        mathAverage={String(Math.round(listItem.vote_average * 10) / 10)} />
     </div>
+    // Math: the score is multiplied by 10 to get the first two numbers of the initial score
+    // Then rounded up to nearest whole number and then divided again with 10 to get 1 decimal point
+    // The console complains about returned value that is NaN, so converted integer to string
   )
 }
 
